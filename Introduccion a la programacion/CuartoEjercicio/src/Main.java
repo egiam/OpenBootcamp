@@ -1,10 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Cliente cliente = new Cliente();
-        cliente.setEdad(19);
-        cliente.setNombre("Ezequiel");
-        cliente.setTelefono("321456321");
-        cliente.setCredito(24);
+        Cliente cliente = new Cliente(19,"Ezequiel","3214569870",24);
 
         System.out.println(
                 "Edad: " + cliente.getEdad()
@@ -16,30 +12,25 @@ public class Main {
 }
 
 class Persona {
+
+    public Persona(int edad, String nombre, String telefono) {
+        this.edad = edad;
+        this.nombre = nombre;
+        this.telefono = telefono;
+    }
+
     int edad;
 
     public int getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public String getTelefono() {
         return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
     }
 
     String nombre, telefono;
@@ -50,7 +41,8 @@ class Cliente extends Persona {
         return credito;
     }
 
-    public void setCredito(int credito) {
+    public Cliente(int edad, String nombre, String telefono, int credito) {
+        super(edad, nombre, telefono);
         this.credito = credito;
     }
 
@@ -62,7 +54,8 @@ class Trabajador extends Persona {
         return salario;
     }
 
-    public void setSalario(int salario) {
+    public Trabajador(int edad, String nombre, String telefono, int salario) {
+        super(edad, nombre, telefono);
         this.salario = salario;
     }
 
