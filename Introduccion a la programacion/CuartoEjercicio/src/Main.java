@@ -61,3 +61,40 @@ class Trabajador extends Persona {
 
     int salario;
 }
+
+//Profe
+public class Main2 {
+
+    public static void main(String[] args) {
+        Cliente2 cliente2 = new Cliente2();
+        Trabajador2 trabajador = new Trabajador2();
+        cliente2.nombre = "Raúl";
+        cliente2.edad = 23;
+        cliente2.telefono = 293214122;
+        cliente2.credito = 150.55;
+        System.out.println("Soy " + cliente2.nombre + ", tengo " + cliente2.edad + " años y mi telefono es " + cliente2.telefono
+                + " y mi credito disponible es " + cliente2.credito + "€");
+
+        trabajador.nombre = "Jose";
+        trabajador.edad = 42;
+        trabajador.telefono = 582910244;
+        trabajador.salario = 2000.32;
+        System.out.println("Soy " + trabajador.nombre + ", tengo " + trabajador.edad + " años y mi telefono es " + trabajador.telefono
+                + " y mi salario es de " + trabajador.salario + "€");
+
+    }
+}
+
+class Persona2{
+    int edad;
+    int telefono;
+    String nombre;
+}
+
+class Cliente2 extends Persona2{
+    double credito;
+}
+
+class Trabajador2 extends Persona2 {
+    double salario;
+}
