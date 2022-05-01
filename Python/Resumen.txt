@@ -1,0 +1,8 @@
+Python es un lenguaje de programacion interpretado
+
+Interpretado: no se ejecuta directamente en el procesador.
+Una herramienta llamada interprete ejecuta el codigo paso a paso.
+L. Compilado es mas rapido q L. Interpretado.
+
+
+
