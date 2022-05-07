@@ -12,6 +12,11 @@ namespace UniversityApiBackend.Models.DataModels
         public string PublicObjective { get; set; } = string.Empty;
         public string Objectives { get; set; } = string.Empty;
         public string Requirments { get; set; } = string.Empty;
-        public string Level { get; set; } = string.Empty;
+        enum Levels
+        {
+            Basico,
+            Intermedio,
+            Avanzado
+        }
     }
 }
