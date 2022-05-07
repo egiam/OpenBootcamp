@@ -1,1 +1,6 @@
 Path of database: Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+
+add-migration "nombre de migration"
+Update-Database
+script-migration
+remove-migration
