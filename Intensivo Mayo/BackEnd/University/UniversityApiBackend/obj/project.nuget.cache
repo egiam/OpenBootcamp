@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Cee1dOPvwvru4Y8rqcfefikWhaNXsKbWQY4krwuLLzRn8D/8kI8ZUZL+1Tv9QPfd9rufaV0qj3Z3ZetNvWJmQQ==",
+  "dgSpecHash": "lP6puKU+myoyycScSKPly/R0qUaJoyitXS8NOwcmX4reO6yVuRh1JecnpEB0zDYXn5Eeg8c6BNBPsW0kF8Wiwg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ezegi\\OneDrive\\Documentos\\Educacion\\OpenBootcamp\\Intensivo Mayo\\BackEnd\\University\\UniversityApiBackend\\UniversityApiBackend.csproj",
   "expectedPackageFiles": [
@@ -98,10 +98,10 @@
     "C:\\Users\\ezegi\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\ezegi\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\ezegi\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\ezegi\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.1\\swashbuckle.aspnetcore.6.3.1.nupkg.sha512",
-    "C:\\Users\\ezegi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
-    "C:\\Users\\ezegi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
-    "C:\\Users\\ezegi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.1\\swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512",
+    "C:\\Users\\ezegi\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.0\\swashbuckle.aspnetcore.6.3.0.nupkg.sha512",
+    "C:\\Users\\ezegi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.0\\swashbuckle.aspnetcore.swagger.6.3.0.nupkg.sha512",
+    "C:\\Users\\ezegi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.0\\swashbuckle.aspnetcore.swaggergen.6.3.0.nupkg.sha512",
+    "C:\\Users\\ezegi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.0\\swashbuckle.aspnetcore.swaggerui.6.3.0.nupkg.sha512",
     "C:\\Users\\ezegi\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\ezegi\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\ezegi\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
