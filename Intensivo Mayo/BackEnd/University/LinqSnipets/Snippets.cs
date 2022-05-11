@@ -183,6 +183,7 @@ namespace LinqSnippets
             var firstList = new List<string>() { "a", "b", "c" };
             var secondList = new List<string>() { "a", "c", "d" };
 
+            //Inner join
             var commonResult = from element in firstList
                              join secondElement in secondList
                              on element equals secondElement
@@ -195,7 +196,51 @@ namespace LinqSnippets
                     (element, secondElement) => new { element, secondElement }
                 );
 
-            //Video: -18:20
+            //Outer Join - left
+            var leftOuterJoin = from element in firstList
+                                join secondElement in secondList
+                                on element equals secondElement
+                                into temporalList //Guarda los elementos comunes en las listas
+                                from temporal in temporalList.DefaultIfEmpty()
+                                where element != temporal //Saca los elementos comunes en las listas, y guarda todos los q no son comunes de parte de element.
+                                select new { Element = element };
+
+            var leftOuterJoin2 = from element in firstList
+                                 from secondElement in secondList.Where(s => s == element).DefaultIfEmpty()
+                                 select new {Element = element, SecondElement = secondElement };
+
+            //Outer Join - right
+            var rightOuterJoin = from secondElement in secondList
+                                 join element in firstList
+                                 on secondElement equals element
+                                 into temporalList //Guarda los elementos comunes en las listas
+                                 from temporal in temporalList.DefaultIfEmpty()
+                                 where secondElement != temporal //Saca los elementos comunes en las listas, y guarda todos los q no son comunes de parte de secondElement.
+                                 select new { Element = secondElement };
+
+            //Union
+            var unionList = leftOuterJoin.Union(rightOuterJoin); //Agarrar todos los elementos que no son iguales entre si
+        }
+
+        static public void SkipTakeLinq()
+        {
+            var myList = new[]
+            {
+                1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+            };
+
+            var skipTwoFirstElements = myList.Skip(2);
+
+            var skipLastTwoElements = myList.SkipLast(2);
+
+            var skipWhileLess4 = myList.SkipWhile(num => num <= 4); //Skipear los q sean menores de 4
+
+            //Take
+            var takeTwoFirstValues = myList.Take(2); //Solo agarra los dos primeros
+
+            var takeTwoLastValues = myList.TakeLast(2); //Solo los dos ultimos
+
+            var takeWhileLess4 = myList.TakeWhile(num => num < 4); //Los menores a 4
         }
     }
 }
