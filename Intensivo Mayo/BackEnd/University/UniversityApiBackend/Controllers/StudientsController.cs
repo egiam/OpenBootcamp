@@ -18,12 +18,12 @@ namespace UniversityApiBackend.Controllers
     {
         private readonly UniversityDBContext _context;
         //Service
-        private readonly IStudentService _studentService;
+        private readonly IStudentService _studentService;//
 
         public StudientsController(UniversityDBContext context, IStudentService studentService)
         {
             _context = context;
-            _studentService = studentService;
+            _studentService = studentService;//
         }
 
         // GET: api/Studients
