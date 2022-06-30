@@ -70,7 +70,7 @@ Operadores:
         >>=
         <<=
         
-    Comparacion:
+    Comparacion/Condicionales:
         ==
         !=
         >
@@ -89,10 +89,19 @@ Operadores:
     Bit:
         &
         |
-        ^
+        ^	"xor" uno tiene que ser falso si o si.
         <<
         >>
         ~
 
 round(numero,2) --> coloca el numero con solo dos decimales
+sorted(lista) --> Lista ordenada
+sorted(lista, reverse=True) --Lista alrevez
+
+-- Solo python 3.10.0 en adelante !!!!!!
+match valor:
+	case 1:
+		print("valor 1")
+	case 2:
+		print("valor 2")
 
