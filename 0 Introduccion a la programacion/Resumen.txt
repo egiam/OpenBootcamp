@@ -1,0 +1,20 @@
+
+Tipo de dato Primitivo: Caracter - Texto - Numero - Booleano
+Tipo de dato Complejo: Array - Tupla - Diccionario - Objeto
+
+Polimorfismo: Las clases heradadas implementan la misma funcion, pero de diferente forma.
+
+Interfaces: No implementan ninguna funcion, pero nos dicen que tenemos que implementar.
+
+Recursividad: Funcion factorial recursiva: Funcion q se llama siempre a si misma.
+
+* Lenguajes Compilados e Interpretados
+
+Un compilador agarra una secuencia de caracteres y lo convierte en otra cosa.
+ej: un lenguaje de programacion a codigo maquina.
+
+Codigo para ser interpretado: convierte un lenguaje de prog. a otro lenguaje de prog.
+
+
+
+
