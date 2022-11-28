@@ -75,4 +75,13 @@ public class EstructurasDeControl {
             System.out.println("El nombre es " + nombres[i]);
         }
 
+        String[] names = {"Juan", "Pedro", "Maria", "Jose"};
+        for (String nombre : names) {
+            if (nombre.equals("Pedro")) {
+                continue;
+            }
+            System.out.println("El nombre es " + nombre);
+        }
+    }
+
 }
